@@ -3,14 +3,14 @@
 Parabéns, você passou para a segunda fase do processo seletivo da [MáximaTech](https://maximatech.com.br/) para desenvolvedor
 Android.
 
-## 5.0 - Instruções
+## Instruções
 
 1. Criar um fork deste repositório e implementar o aplicativo conforme instruções abaixo. 
 2. Abrir um merge request para este repositório para que possamos avaliar o seu código. 
 3. Enviar um e-mail para <talentoshumanos@maximatech.com.br> com
 
-	Assunnto: [Avaliação Android] - NOME DO CANDIDATO
-	Indicando o Status da Prova. 
+	* Assunto "[Teste Desenvolvedor Android] - Nome do candidato"
+	* Link: Link do merge request Github. 
 
 ## 1.0 - O que esperamos?  ;-)
 
