@@ -1,6 +1,6 @@
 ## Objetivo
 
-Parabéns, você passou para a segunda fase do processo seletivo da [Máxima Sistemas](http://www.maximasistemas.com.br/) para desenvolvedor
+Parabéns, você passou para a segunda fase do processo seletivo da [MáximaTech](https://maximatech.com.br/) para desenvolvedor
 Android.
 
 ## O que esperamos? ;-)
@@ -44,7 +44,14 @@ Sugestões:
 ## Service
 
 A tela *./Design/Screenshots/3.1 - Cadastro do cliente – Snackbar de status.png* possui o botão **Verificar status do cliente** que é responsável por interagir com o service.
-Quando o usuário clicar no botão em questão deve-se consultar o service que foi iniciado na tela principal *./Design/2 - Menu principal.png* e retornar o texto **Data/Hora - Status cliente**, por exemplo, **10/09/2018 - Status ativo** 
+
+![Tela Service](https://github.com/talentosmaxima/Android/blob/master/Design/Screenshots/3.1%20-%20Cadastro%20do%20cliente%20%E2%80%93%20Snackbar%20de%20status.png)
+
+Quando o usuário clicar no botão em questão deve-se consultar o service que foi iniciado na tela principal 
+
+*./Design/2 - Menu principal.png* e retornar o texto **Data/Hora - Status cliente**, por exemplo, **10/09/2018 - Status ativo** 
+
+![Tela Service](https://github.com/talentosmaxima/Android/blob/master/Design/Screenshots/2%20-%20Menu%20principal.png)
 
 <sub>https://developer.android.com/guide/components/services?hl=pt-br<sub>
 
@@ -58,6 +65,10 @@ Importante salientar que **tudo que você enviar será avaliado**
 Todo material pertinente para reproduzir as telas está na pasta *./Design*, recomendamos dar uma olhada no arquivo *./Design/Protótipo maxApp.xd* para verificar dimensões, bordas, cores, estilos e tamanhos corretos.
 
 <sub>*o Adobe XD é um app pago, mas tem versão free https://www.adobe.com/br/products/xd.html <sub>
+	
+### Arquivos de Design
+
+[Arquivos Design](https://github.com/talentosmaxima/Android/blob/master/Design/Prot%C3%B3tipo-maxApp.pdf)
 
 ### JSON
 
