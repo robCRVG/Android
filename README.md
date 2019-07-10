@@ -3,7 +3,16 @@
 Parabéns, você passou para a segunda fase do processo seletivo da [MáximaTech](https://maximatech.com.br/) para desenvolvedor
 Android.
 
-## O que esperamos? 1.0 ;-)
+## 5.0 - Instruções
+
+1. Criar um fork deste repositório e implementar o aplicativo conforme instruções abaixo. 
+2. Abrir um merge request para este repositório para que possamos avaliar o seu código. 
+3. Enviar um e-mail para <talentoshumanos@maximatech.com.br> com
+
+	Assunnto: [Avaliação Android] - NOME DO CANDIDATO
+	Indicando o Status da Prova. 
+
+## 1.0 - O que esperamos?  ;-)
 
 * Um aplicativo Android que faça:
 
@@ -29,24 +38,23 @@ Android.
 	    * A seta da toolbar deve voltar voltar para a tela anterior
 	    * O bottom navigation deve levar às telas de Histórico de pedidos, Alvarás ou Dados do Cliente
 4. Criação de Serviços em Background
-	* Criar um serviço em background que notifica o usuário a cada duas horas. Ao clicar na notificação o aplicativo deverá ser aberto. As seguintes bibliotecas são recomendadas para este item: (AlarmManager, Service, Firebase Job Dispacher, WorkManager)
+	* Desenvolver um serviço em background que cria uma notificação que avisa o usuário a cada 5 minutos para entrar no aplicativo. Ao clicar na notificação o aplicativo deverá ser aberto. 
 	
-
 O aplicativo deverá:
+
 * Reproduzir a interface definida no layout fornecido
 * Consumir o json (clientes.json) para exibir os dados dos clientes
 * Consumir o json (pedidos.json) para listagem de histórico de pedidos
-* Rodar um service que interaja com a tela de *3.1 - Cadastro do cliente – Snackbar de status* e exiba o texto numa snackbar
-* Manter a posição da lista depois que fizer transição de tela
+* Rodar um serviço em background que cria uma notificação para alertar o usuário para entrar no aplicativo. 
 
 
 Sugestões:
 * Salvar os dados num banco de dados e recuperá-los em caso de falha de conexão
 * Testes unitários e de interfaces
 
-## Requisições  REST 2.0
+## 2.0 - Requisições  REST 
 
-A tela abaixo possui o botão **Verificar status do cliente** que é responsável por enviar uma requisição GET para o endpoint informado no item 4.0, para retornar o status do cliente. 
+A tela abaixo possui o botão **Verificar status do cliente** que é responsável por enviar uma requisição **GET** para o endpoint informado no item 4.0, para retornar o status do cliente. 
 
 ![Tela Service](https://github.com/talentosmaxima/Android/blob/master/Design/Screenshots/3.1%20-%20Cadastro%20do%20cliente%20%E2%80%93%20Snackbar%20de%20status.png)
 
@@ -54,41 +62,31 @@ Quando o usuário clicar no botão em questão deve-se consultar o status que es
 
 Importante salientar que **tudo que você enviar será avaliado**
 
-### Onde estão as coisas? 3.0
+### 3.0 - Onde estão as coisas? 
 
-### Design 3.1
+### 3.1 - Design 
 
 Todo material pertinente para reproduzir as telas está na pasta *./Design*, recomendamos dar uma olhada no arquivo *./Design/Protótipo maxApp.xd* para verificar dimensões, bordas, cores, estilos e tamanhos corretos.
 
 <sub>*o Adobe XD é um app pago, mas tem versão free https://www.adobe.com/br/products/xd.html <sub>
 	
-### Arquivos de Design 3.2
+### 3.2 - Arquivos de Design 
 
 [Arquivos Design](https://github.com/talentosmaxima/Android/blob/master/Design/Prot%C3%B3tipo-maxApp.pdf)
 
-### JSON 4.0
+### 4.0 - JSON 
 
 Os jsons utlizados nessa avaliação estão contidos nos seguintes caminhos. 
- Clientes: Json/clientes.json 
 
-Alternativamente um GET Request no seguinte endpoint
+**GET Request -> Dados do Cliente**
 
 	URL : https://api.myjson.com/bins/1bo7qj
-	
- Pedidos: Json/pedidos.json 
 
-Alternativamente um GET Request no seguinte endpoint
+**GET Request -> Histórico de Pedidos**
 
 	URL: https://api.myjson.com/bins/wjl97
-    
-## Instruções
 
-Enviar para talentoshumanos@maximatech.com.br:
-* Assunto "[Teste Desenvolvedor Android] - Nome do candidato"
-* Link do código fonte no [github](https://github.com/) ou [gitlab](https://about.gitlab.com/)
-* Executável
-
-## O que vamos avaliar?
+## 5.0 - O que vamos avaliar?
 
 * Organização do projeto
 * Utilização de padrões arquiteturais
