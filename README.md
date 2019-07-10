@@ -10,7 +10,7 @@ Android.
 3. Enviar um e-mail para <talentoshumanos@maximatech.com.br> com
 
 	* Assunto "[Teste Desenvolvedor Android] - Nome do candidato"
-	* Link: Link do merge request Github. 
+	* Link: -> Merge request do Github
 
 ## 1.0 - O que esperamos?  ;-)
 
