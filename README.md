@@ -6,6 +6,7 @@ Android.
 ## Instruções
 
 1. Criar um fork deste repositório e implementar o aplicativo conforme instruções abaixo. 
+2. Arquivos de design e mockups estão contidos nos itens 3.0 a 3.2
 2. Abrir um merge request para este repositório para que possamos avaliar o seu código. 
 3. Enviar um e-mail para <talentoshumanos@maximatech.com.br> com
 
