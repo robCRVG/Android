@@ -104,4 +104,4 @@ Enviar para talentoshumanos@maximasistemas.com.br:
 
 ## Dúvidas
 
-Entre em contato com <gean.paiva@maximasistemas.com.br>
+Entre em contato com <talentoshumanos@maximatech.com.br>
