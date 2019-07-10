@@ -74,9 +74,14 @@ Todo material pertinente para reproduzir as telas está na pasta *./Design*, rec
 
 Os jsons utlizados nessa avaliação estão contidos nos seguintes caminhos. 
 * Clientes: Json/clientes.json*
-	Ou: https://api.myjson.com/bins/1bo7qj
+
+Alternativamente um GET REQUEST no seguinte endpoint
+	URL : https://api.myjson.com/bins/1bo7qj
+	
 * Pedidos: Json/pedidos.json*
-	Ou: https://api.myjson.com/bins/wjl97
+
+Alternativamente um GET REQUEST no seguinte endpoint
+	URL: https://api.myjson.com/bins/wjl97
     
 ## Instruções
 
