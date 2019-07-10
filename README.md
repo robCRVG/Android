@@ -3,7 +3,7 @@
 Parabéns, você passou para a segunda fase do processo seletivo da [MáximaTech](https://maximatech.com.br/) para desenvolvedor
 Android.
 
-## O que esperamos? ;-)
+## O que esperamos? 1.0 ;-)
 
 * Um aplicativo Android que faça:
 
@@ -28,6 +28,9 @@ Android.
     * Alvarás
 	    * A seta da toolbar deve voltar voltar para a tela anterior
 	    * O bottom navigation deve levar às telas de Histórico de pedidos, Alvarás ou Dados do Cliente
+4. Criação de Serviços em Background
+	* Criar um serviço em background que notifica o usuário a cada duas horas. Ao clicar na notificação o aplicativo deverá ser aberto. As seguintes bibliotecas são recomendadas para este item: (AlarmManager, Service, Firebase Job Dispacher, WorkManager)
+	
 
 O aplicativo deverá:
 * Reproduzir a interface definida no layout fornecido
@@ -41,36 +44,29 @@ Sugestões:
 * Salvar os dados num banco de dados e recuperá-los em caso de falha de conexão
 * Testes unitários e de interfaces
 
-## Service
+## Requisições  REST 2.0
 
-A tela *./Design/Screenshots/3.1 - Cadastro do cliente – Snackbar de status.png* possui o botão **Verificar status do cliente** que é responsável por interagir com o service.
+A tela abaixo possui o botão **Verificar status do cliente** que é responsável por enviar uma requisição GET para o endpoint informado no item 4.0, para retornar o status do cliente. 
 
 ![Tela Service](https://github.com/talentosmaxima/Android/blob/master/Design/Screenshots/3.1%20-%20Cadastro%20do%20cliente%20%E2%80%93%20Snackbar%20de%20status.png)
 
-Quando o usuário clicar no botão em questão deve-se consultar o service que foi iniciado na tela principal 
-
-*./Design/2 - Menu principal.png* e retornar o texto **Data/Hora - Status cliente**, por exemplo, **10/09/2018 - Status ativo** 
-
-![Tela Service](https://github.com/talentosmaxima/Android/blob/master/Design/Screenshots/2%20-%20Menu%20principal.png)
-
-<sub>https://developer.android.com/guide/components/services?hl=pt-br<sub>
-
+Quando o usuário clicar no botão em questão deve-se consultar o status que está armazenado no arquivo json e retornar o texto **Data/Hora - Status cliente**, por exemplo, **10/09/2018 - Status ativo** 
 
 Importante salientar que **tudo que você enviar será avaliado**
 
-## Onde estão as coisas?
+### Onde estão as coisas? 3.0
 
-### Design
+### Design 3.1
 
 Todo material pertinente para reproduzir as telas está na pasta *./Design*, recomendamos dar uma olhada no arquivo *./Design/Protótipo maxApp.xd* para verificar dimensões, bordas, cores, estilos e tamanhos corretos.
 
 <sub>*o Adobe XD é um app pago, mas tem versão free https://www.adobe.com/br/products/xd.html <sub>
 	
-### Arquivos de Design
+### Arquivos de Design 3.2
 
 [Arquivos Design](https://github.com/talentosmaxima/Android/blob/master/Design/Prot%C3%B3tipo-maxApp.pdf)
 
-### JSON
+### JSON 4.0
 
 Os jsons utlizados nessa avaliação estão contidos nos seguintes caminhos. 
  Clientes: Json/clientes.json 
@@ -87,7 +83,7 @@ Alternativamente um GET Request no seguinte endpoint
     
 ## Instruções
 
-Enviar para talentoshumanos@maximasistemas.com.br:
+Enviar para talentoshumanos@maximatech.com.br:
 * Assunto "[Teste Desenvolvedor Android] - Nome do candidato"
 * Link do código fonte no [github](https://github.com/) ou [gitlab](https://about.gitlab.com/)
 * Executável
