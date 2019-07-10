@@ -72,9 +72,11 @@ Todo material pertinente para reproduzir as telas está na pasta *./Design*, rec
 
 ### JSON
 
-Os jsons utlizados nessa avaliação estão contidos no caminho [Json](https://mxmapedidodevenda.s3.amazonaws.com/prova_android/).
-* Clientes: */clientes.json*
-* Pedidos: */pedidos.json*
+Os jsons utlizados nessa avaliação estão contidos nos seguintes caminhos. 
+* Clientes: Json/clientes.json*
+	Ou: https://api.myjson.com/bins/1bo7qj
+* Pedidos: Json/pedidos.json*
+	Ou: https://api.myjson.com/bins/wjl97
     
 ## Instruções
 
