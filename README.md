@@ -44,8 +44,8 @@ Android.
 O aplicativo deverá:
 
 * Reproduzir a interface definida no layout fornecido
-* Consumir o json (clientes.json) para exibir os dados dos clientes
-* Consumir o json (pedidos.json) para listagem de histórico de pedidos
+* Consumir o json (clientes.json) por meio de uma requisição http para exibir os dados dos clientes
+* Consumir o json (pedidos.json) por meio de uma requisição http  para listagem de histórico de pedidos
 * Rodar um serviço em background que cria uma notificação para alertar o usuário para entrar no aplicativo. 
 
 
