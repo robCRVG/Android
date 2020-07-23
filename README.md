@@ -81,11 +81,11 @@ Os jsons utlizados nessa avaliação estão contidos nos seguintes caminhos.
 
 **GET Request -> Dados do Cliente**
 
-	URL : https://api.myjson.com/bins/1bo7qj
+	URL : http://maximatech.free.beeceptor.com/android/cliente
 
 **GET Request -> Histórico de Pedidos**
 
-	URL: https://api.myjson.com/bins/wjl97
+	URL: http://maximatech.free.beeceptor.com/android/pedido
 
 ## 5.0 - O que vamos avaliar?
 
