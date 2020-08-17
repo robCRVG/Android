@@ -5,7 +5,6 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Context;
 import android.content.Intent;
-import android.icu.util.UniversalTimeScale;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -13,9 +12,9 @@ import android.view.View;
 import android.widget.ImageView;
 
 import br.com.provaandroid.R;
+import br.com.provaandroid.service.NotificationService;
 
 public class MainActivity extends AppCompatActivity {
-
     private ImageView nuvemOn, nuvemOff;
     private CardView cvDadosCliente;
 
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         boolean off = false;
         ConnectivityManager cm =
                 (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
-
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
         boolean isConnected = activeNetwork != null &&
                 activeNetwork.isConnectedOrConnecting();
@@ -61,5 +59,9 @@ public class MainActivity extends AppCompatActivity {
         cvDadosCliente = findViewById(R.id.cvDadosCliente);
     }
 
-
+    @Override
+    protected void onStop() {
+        super.onStop();
+        startService(new Intent(this, NotificationService.class));
+    }
 }

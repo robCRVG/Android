@@ -1,9 +1,11 @@
 package br.com.provaandroid.entities;
 
+import java.util.Map;
+
 public class Cliente {
 
     private String id, codigo, razao_social, nomefantasia, cnpj, ramo_atividade, endereco, status;
-    private Contato contato = new Contato();
+    private Contato contatos;
 
     public String getId() {
         return id;
@@ -65,16 +67,16 @@ public class Cliente {
         return status;
     }
 
+    public Contato getContatos() {
+        return contatos;
+    }
+
+    public void setContatos(Contato contatos) {
+        this.contatos = contatos;
+    }
+
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public Contato getContato() {
-        return contato;
-    }
-
-    public void setContato(Contato contato) {
-        this.contato = contato;
     }
 
     @Override
@@ -88,7 +90,7 @@ public class Cliente {
                 ", ramo_atividade='" + ramo_atividade + '\'' +
                 ", endereco='" + endereco + '\'' +
                 ", status='" + status + '\'' +
-                ", contato=" + contato +
+                ", contatos=" + contatos +
                 '}';
     }
 }

@@ -11,21 +11,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <service
+            android:name = ".service.NotificationService"
+            android:label = "@string/app_name" >
+            <intent-filter>
+                <action
+                    android:name = "app.tutorialspoint.com.notifyme.NotificationService" />
+                <category android:name = "android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <activity android:name=".activitys.Alvaras" />
+        <activity android:name=".activitys.HistoricoPedidos" />
+        <activity android:name=".activitys.MainActivity" />
         <activity
             android:name=".activitys.DadosCliente"
-            android:parentActivityName=".activitys.MainActivity"></activity>
+            android:parentActivityName=".activitys.MainActivity" />
         <activity
             android:name=".activitys.SplashScreen"
             android:theme="@style/AppCompat.TelaCheia">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activitys.MainActivity"
-            android:launchMode="singleTop" />
     </application>
 
 </manifest>

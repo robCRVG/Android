@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_pessoa"
+        android:icon="@drawable/ic_navigator_pessoa"
+        android:title="@string/dados"/>
+    <item
+        android:id="@+id/item_historico_pedidos"
+        android:icon="@drawable/ic_navigator_historico_pedidos"
+        android:title="@string/histPpedidos"/>
+
+    <item
+        android:id="@+id/item_alvaras"
+        android:icon="@drawable/ic_navigator_alvaras"
+        android:title="@string/Alvarás"/>
+
+
+</menu>
+

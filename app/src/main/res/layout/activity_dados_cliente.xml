@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dadosClientes"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,10 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="200dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <GridLayout
             android:id="@+id/gvTelaDadosCliente"
@@ -24,7 +22,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
             android:columnCount="1"
-            android:rowCount="1">
+            android:rowCount="2">
 
 
             <androidx.cardview.widget.CardView
@@ -42,56 +40,364 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="50dp">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tvTelaClienteCodigo"
+                        android:id="@+id/tvDadosCliente"
                         android:layout_width="wrap_content"
-                        android:text="teste codigo"
-                        android:layout_height="20dp" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:text="Dados do cliente"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeMinTextSize="1sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tvTelaClienteCodigo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="4dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/tvTelaClienteRazaoSocial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="4dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
 
                     <TextView
-                        android:id="@+id/tvTelaClienteRazaoSocial"
+                        android:id="@+id/tvTelaClienteNomeFantasia"
                         android:layout_width="wrap_content"
-                        android:text="teste razao"
-                        android:layout_height="50dp" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="4dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/tvTelaClienteCnpj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="4dp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeMinTextSize="1sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/tvTelaClienteRamoAtividade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="4dp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeMinTextSize="1sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/tvTelaClienteEndereco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="4dp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeMinTextSize="1sp"
+                        android:autoSizeStepGranularity="1sp"
+                        android:autoSizeTextType="uniform"/>
+
+
                 </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTelaClienteContatos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/tvDadosContatos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="Contatos"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/tvNomeContato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="2dp"
+                        android:autoSizeTextType="uniform"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTelaClienteTelefone"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:autoSizeMaxTextSize="16sp"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/tvTelaClienteEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:autoSizeMaxTextSize="12sp"
+                            android:autoSizeMinTextSize="2sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#000000"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTelaClienteCelular"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:autoSizeMaxTextSize="16sp"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/tvTelaClienteDtNascimento"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:autoSizeTextType="uniform"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTelaClienteConjuge"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:autoSizeMaxTextSize="16sp"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/tvTelaClienteDtnConjuge"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:autoSizeMaxTextSize="16sp"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTelaClienteTipo"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="#000000"
+                            android:autoSizeMaxTextSize="16sp"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"/>
+
+                        <TextView
+                            android:id="@+id/tvTelaClienteTime"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:textColor="#000000"
+                            android:autoSizeMaxTextSize="16sp"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
 
             </androidx.cardview.widget.CardView>
 
+
         </GridLayout>
 
-        <Button
-            android:id="@+id/btnStatusCliente"
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStatusCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/clienteBotaoVerificarStatus"
+        android:text="@string/VerificarStatus"
+        android:textColor="#FFFF" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@color/clienteBotaoVerificarStatus"
-            android:text="@string/VerificarStatus"
-            android:textColor="#FFFF" />
+            android:layout_gravity="bottom"
+            android:background="@color/toolbar"
+            app:itemIconTint="#FFFF"
+            app:menu="@menu/bottom_navigation_menu" />
+
 
     </LinearLayout>
 
